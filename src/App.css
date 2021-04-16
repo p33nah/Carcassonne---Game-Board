@@ -1,38 +1,216 @@
-.App {
-  text-align: center;
+body {
+  height: 100vh;
+  background-image: url("./bg-table.jpg");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.game-over {
+  position: fixed;
+  top: 2rem;
+  right: 50%;
+  z-index: 5000000000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(30deg, rgb(0, 0, 0), transparent);
+  opacity: 0.2;
+  z-index: -1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  margin: 1rem;
+}
+
+.players {
+  position: fixed;
+  top: 20rem;
+  right: 1rem;
+  z-index: 5000000;
+}
+
+.meeple {
+  width: 20px;
+  height: 20px;
+  z-index: 5000000;
+}
+
+.meeple:hover {
+  cursor: pointer;
+}
+
+.player {
+  margin: 1rem 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: wheat;
+  width: 13rem;
+  padding: 1rem 2rem;
+  z-index: 5000000;
+  border-radius: 0.3rem;
+  box-shadow: -5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.player h6 {
+  margin-bottom: 1rem;
+}
+
+.meeples {
+  display: flex;
+  z-index: 5000000;
+}
+
+.current-tile-container {
+  position: fixed;
+  top: 8rem;
+  right: 1rem;
+  width: 13rem;
+  background-color: wheat;
+  display: grid;
+  place-items: center;
+  border-radius: 0.3rem;
+  box-shadow: -5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+h4 {
+  justify-self: flex-start;
+  margin-bottom: 1rem;
+}
+
+.current-tile {
+  border-radius: 0.3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template: repeat(20, 50px) / repeat(20, 50px);
+}
+
+.cell {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+.cell-grid {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-areas:
+    "a b c"
+    "d e f"
+    "g h i";
+  place-items: center;
+}
+
+.p {
+  width: 100%;
+  height: 100%;
+  z-index: 98;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.p0 {
+  grid-area: a;
+}
+.p1 {
+  grid-area: b;
+}
+.p2 {
+  grid-area: c;
+}
+.p3 {
+  grid-area: d;
+}
+.p4 {
+  grid-area: e;
+}
+.p5 {
+  grid-area: f;
+}
+.p6 {
+  grid-area: g;
+}
+.p7 {
+  grid-area: h;
+}
+.p8 {
+  grid-area: i;
+}
+
+.btn-rotate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 10000;
+  filter: invert();
+  cursor: pointer;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.btn-place {
+  position: fixed;
+  top: 2.85rem;
+  right: 50%;
+}
+
+.btn-place-meeple {
+  position: fixed;
+  top: 2.85rem;
+  right: 50%;
+}
+
+.btn-remove-meeple {
+  position: fixed;
+  top: 2.85rem;
+  right: 50%;
+}
+
+.btn-end {
+  position: fixed;
+  top: 2.85rem;
+  right: 1rem;
+}
+
+.btn-skip {
+  position: fixed;
+  top: 2.85rem;
+  right: 15%;
+}
+
+button {
+  border-radius: 0.3rem;
+  cursor: pointer;
+  z-index: 100;
+  padding: 0.8rem 2rem;
+  box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  line-height: 1.25;
+  text-decoration: none;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: none;
 }
