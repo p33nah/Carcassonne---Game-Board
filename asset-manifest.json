@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Carcassonne---Game-Board/static/css/main.8cbb5394.chunk.css",
+    "main.js": "/Carcassonne---Game-Board/static/js/main.d9e3fc1c.chunk.js",
+    "main.js.map": "/Carcassonne---Game-Board/static/js/main.d9e3fc1c.chunk.js.map",
+    "runtime-main.js": "/Carcassonne---Game-Board/static/js/runtime-main.2a0c1084.js",
+    "runtime-main.js.map": "/Carcassonne---Game-Board/static/js/runtime-main.2a0c1084.js.map",
+    "static/js/2.49709312.chunk.js": "/Carcassonne---Game-Board/static/js/2.49709312.chunk.js",
+    "static/js/2.49709312.chunk.js.map": "/Carcassonne---Game-Board/static/js/2.49709312.chunk.js.map",
+    "static/js/3.f1f161a9.chunk.js": "/Carcassonne---Game-Board/static/js/3.f1f161a9.chunk.js",
+    "static/js/3.f1f161a9.chunk.js.map": "/Carcassonne---Game-Board/static/js/3.f1f161a9.chunk.js.map",
+    "index.html": "/Carcassonne---Game-Board/index.html",
+    "static/css/main.8cbb5394.chunk.css.map": "/Carcassonne---Game-Board/static/css/main.8cbb5394.chunk.css.map",
+    "static/js/2.49709312.chunk.js.LICENSE.txt": "/Carcassonne---Game-Board/static/js/2.49709312.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Carcassonne---Game-Board/static/media/bg-table.2ceae1bd.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2a0c1084.js",
+    "static/js/2.49709312.chunk.js",
+    "static/css/main.8cbb5394.chunk.css",
+    "static/js/main.d9e3fc1c.chunk.js"
+  ]
+}
